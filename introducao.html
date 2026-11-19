@@ -1,0 +1,1016 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introdução passo a passo ao framework mobile [Ionic]">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/br-ionic-etape-par-etape-oct-2026/introducao.html">
+      
+      
+        <link rel="prev" href="index.html">
+      
+      
+        <link rel="next" href="configuracao-do-ambiente-de-desenvolvimento.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>1. Introdução - Introdução passo a passo ao framework mobile [Ionic]</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    var siteName = "Introdução passo a passo ao framework mobile [Ionic]";
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+  </script>
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-introducao" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Introdução passo a passo ao framework mobile [Ionic]" class="md-header__button md-logo" aria-label="Introdução passo a passo ao framework mobile [Ionic]" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introdução passo a passo ao framework mobile [Ionic]
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              1. Introdução
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Alternar para o modo escuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para o modo escuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="purple"  aria-label="Alternar para o modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para o modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://stahe.github.io/br-ionic-etape-par-etape-oct-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Introdução passo a passo ao framework mobile [Ionic]" class="md-nav__button md-logo" aria-label="Introdução passo a passo ao framework mobile [Ionic]" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introdução passo a passo ao framework mobile [Ionic]
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://stahe.github.io/br-ionic-etape-par-etape-oct-2026" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bem-vindo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introdução
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="introducao.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introdução
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-o-papel-do-ionic-em-uma-aplicacao-clienteservidor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1. O papel do Ionic em uma aplicação cliente/servidor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-ferramentas-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2. Ferramentas utilizadas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-capturas-de-tela" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3. Capturas de tela
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-os-exemplos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4. Os exemplos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-conteudo-do-documento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.5. Conteúdo do documento
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuracao-do-ambiente-de-desenvolvimento.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Configuração do ambiente de desenvolvimento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="primeiros-passos-com-o-ionic.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Primeiros passos com o Ionic
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="componentes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Componentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="roteamento.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Roteamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="operacoes-assincronas-e-estado-compartilhado.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Operações assíncronas e estado compartilhado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="internacionalizacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Internacionalização
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="o-servidor-rdvmedecins-uma-caixa-preta.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. O servidor RdvMedecins, uma caixa-preta
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="comunicacao-com-o-servidor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Comunicação com o servidor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusao-intermediaria.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Conclusão intermediária
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="estudo-de-caso-o-cliente-ionic-da-aplicacao-rdvmedecins.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Estudo de caso: o cliente Ionic da aplicação RdvMedecins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="implantacao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12. Implantação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusao.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    13. Conclusão
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="apendices.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    14. Apêndices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1-introducao">1. <span style="color: #2e74b5">Introdução</span></h1>
+<p>O PDF deste documento está <a href="https://1drv.ms/b/c/f53a919f43d27eb5/IQBIcfvH7TvvSIoniA8r7N7EAan_z8O9hyfMbSNrqkc5HZg?e=QxTbJi"><u><span style="color: #0563c1">AQUI</span></u></a>.</p>
+<p>O código deste documento está <a href="https://1drv.ms/u/c/f53a919f43d27eb5/IQDZMHPbWGFmSrax28StRfGUAYOfxetN58PEpi6DNS2OXxE?e=VD837I"><u><span style="color: #0563c1">AQUI</span></u></a>.</p>
+<p>Este documento é um produto de Claude, a IA da Anthropic. Ele segue o curso <a href="https://stahe.github.io/br-flutter-etape-par-etape-sept-2026/"><u><span style="color: #0563c1">“Introdução passo a passo ao framework mobile Flutter</span></u></a>”, do qual toma emprestados o roteiro, os exemplos e o estudo de caso, e o curso <a href="https://stahe.github.io/br-angular-etape-par-etape-sept-2026/"><u><span style="color: #0563c1">“Introdução passo a passo ao framework Angular</span></u></a>”, do qual toma emprestadas as ferramentas:</p>
+<ul>
+<li>No curso <em>[Flutter]</em>, a aplicação é um aplicativo <strong>mobile</strong> escrito em <em>[Dart]</em>, cujo motor, o <em>[Flutter]</em>, renderiza cada pixel por conta própria;</li>
+<li>No curso de <em>[Angular]</em>, a aplicação é uma aplicação <strong>web</strong>: HTML, CSS e <em>[TypeScript]</em>, executados por um navegador;</li>
+<li>Neste curso, a aplicação é AS DUAS COISAS: uma aplicação web, escrita com <em>[Angular]</em> e com componentes do framework <em>[Ionic]</em>, que a ferramenta <em>[Capacitor]</em> empacota em uma aplicação <em>[Android]</em> instalada no celular. O mesmo código, sem nenhuma alteração, também roda em um navegador.</li>
+</ul>
+<p>O servidor, por sua vez, permanece inalterado: é o servidor JSON <em>[RdvMedecins]</em> das lições anteriores, escrito com <em>[NestJS]</em>. E as telas do aplicativo são as que os leitores das outras lições já conhecem (login com CAPTCHA, agenda do médico, janela de consulta, portal do paciente, gerenciamento de médicos e clientes, criação de conta, francês e inglês), adaptadas para a tela de um celular.</p>
+<p>O documento segue a mesma estrutura de seus predecessores: primeiro, numerosos exemplos curtos, cada um centrado em um conceito de <em>[Ionic]</em> ou <em>[Angular]</em>, seguidos de um estudo de caso completo, o cliente <em>[Ionic]</em> da aplicação <em>[RdvMedecins]</em>, cujos arquivos são todos comentados. Os 25 exemplos têm a mesma numeração e exibem as mesmas telas que os do curso de <em>[Flutter]</em> (e os dos cursos de <em>[React]</em> e <em>[Vue.js]</em> ): o leitor familiarizado com um desses frameworks reconhecerá os mesmos exemplos, escritos no estilo de <em>[Ionic]</em> e <em>[Angular]</em>. Cada exemplo também termina com uma comparação com o <em>[Flutter]</em>.</p>
+<p>Pressupõe-se que o leitor conheça os fundamentos da linguagem <em>[TypeScript]</em> e do framework <em>[Angular]</em>: eles são abordados nos cursos <a href="https://stahe.github.io/br-typescript-sept-2026/"><u><span style="color: #0563c1">“Introdução à linguagem TypeScript por meio de exemplos”</span></u></a> e <a href="https://stahe.github.io/br-angular-etape-par-etape-sept-2026/"><u><span style="color: #0563c1">“Introdução passo a passo ao framework Angular</span></u></a>”. Mesmo assim, os conceitos de <em>[Angular]</em> utilizados (signals, templates, injeção de dependência, roteador, formulários reativos etc.) são revistos ao longo dos exemplos, conforme se tornam necessários.</p>
+<h2 id="11-o-papel-do-ionic-em-uma-aplicacao-clienteservidor">1.1. <span style="color: #2e74b5">O papel do Ionic em uma aplicação cliente/servidor</span></h2>
+<p>A aplicação tem duas partes, que se comunicam entre si apenas por meio de requisições HTTP:</p>
+<p><img src="images/1000000000000AF00000042CEBEC165C.png" width="605" height="231" style="width:16cm;height:6.103cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000AF00000042CEBEC165C.png" /></p>
+<ul>
+<li>1: a aplicação <em>[Ionic]</em>, executada no celular, envia uma requisição HTTP ao servidor, por exemplo <strong><em>[GET /api/schedule?doctorId=1&amp;day=2026-10-05]</em></strong>;</li>
+<li>2: o servidor responde com dados JSON: a agenda desse médico para esse dia. Ele não gera nenhuma página;</li>
+<li>3: a partir desses dados, o <em>[Angular]</em> atualiza a tela do celular.</li>
+</ul>
+<p>Esta é exatamente a arquitetura dos clientes <em>[Flutter]</em>, <em>[React]</em>, <em>[Vue.js]</em> e <em>[Angular]</em>: a única diferença é o que gera a exibição. E, nesse aspecto, o <em>[Ionic]</em> é o oposto do <em>[Flutter]</em>. <em>[Flutter]</em> é um motor de renderização: não depende em nada do navegador e renderiza por conta própria cada pixel da tela. <em>[Ionic]</em>, por outro lado, não renderiza nada: é uma biblioteca de <strong>web components</strong>: novos elementos HTML (<strong><em>[&lt;ion-button&gt;]</em></strong>, <strong><em>[&lt;ion-input&gt;]</em></strong>, <strong><em>[&lt;ion-list&gt;]</em></strong>, <strong><em>[&lt;ion-tabs&gt;]</em></strong>...), criados com a ferramenta <em>[Stencil]</em> da equipe do <em>[Ionic]</em>, que qualquer navegador sabe exibir. Esses componentes imitam os componentes nativos do celular em dois “modos”: <em>[md]</em> (<em>[Material Design]</em>, a aparência do <em>[Android]</em>) e <em>[ios]</em> (a aparência do <em>[iPhone]</em>). Este curso impõe o modo <em>[md]</em> em todos os lugares, inclusive no navegador. Por serem simples elementos HTML, os componentes do <em>[Ionic]</em> podem ser usados com <em>[Angular]</em>, <em>[React]</em> ou <em>[Vue.js]</em>: este curso os utiliza com <em>[Angular]</em> (o pacote <em>[@ionic/angular]</em>).</p>
+<p>A aplicação é, portanto, uma aplicação <strong>web</strong> comum: uma página HTML, uma folha de estilos e código <em>[JavaScript]</em> compilado a partir de <em>[TypeScript]</em>. É o <em>[Capacitor]</em> (da mesma equipe do <em>[Ionic]</em>) que a transforma em uma aplicação <em>[Android]</em>:</p>
+<ul>
+<li><em>[Capacitor]</em> gera um projeto <em>[Android]</em> nativo, cuja única tela é uma <strong>WebView</strong>: o motor do navegador <em>[Chrome]</em> do celular, em tela cheia, sem barra de endereço. A aplicação web compilada é copiada para esse projeto, e a WebView a carrega na inicialização. Para o usuário, é como qualquer outro aplicativo: um ícone, uma tela de abertura e o botão Voltar do <em>[Android]</em>;</li>
+<li>o código <em>[JavaScript]</em> acessa os recursos do celular (armazenamento, câmera, notificações, geolocalização etc.) por meio de plugins do <em>[Capacitor]</em>, que funcionam como uma ponte para o código nativo. Este curso usa dois deles: <em>[@capacitor/preferences]</em> (um pequeno repositório chave-valor no dispositivo, exemplo 20) e <em>[CapacitorHttp]</em> (requisições HTTP feitas pelo código nativo do <em>[Android]</em>, exemplos 22 a 25);</li>
+<li>O mesmo código roda em um navegador, onde os plugins têm uma versão web (o armazenamento do <em>[Capacitor]</em> passa então a usar o <em>[localStorage]</em> do navegador). Assim, desenvolvemos no <em>[Chrome]</em>, no tamanho de um celular, usando suas ferramentas de desenvolvimento, e depois passamos para o <em>[Android]</em> para testar.</li>
+</ul>
+<p>As três camadas da aplicação e o que cada uma oferece:</p>
+<ul>
+<li><em>[Angular]</em>: o framework da aplicação. Fornece os componentes (uma classe <em>[TypeScript]</em> e um template HTML), os <strong>signals</strong> (o estado, cujas mudanças atualizam a tela), a injeção de dependência (serviços, estado compartilhado), o roteador (um endereço por tela), os formulários, o cliente HTTP e os “pipes” (formatação). Os leitores do curso de <em>[Flutter]</em> reconhecerão o princípio: a interface é uma função do estado. Nunca modificamos a própria tela: mudamos o estado, e o <em>[Angular]</em> atualiza tudo o que depende dele;</li>
+<li><em>[Ionic]</em>: os componentes de interface, que se parecem com os de um aplicativo mobile (barras de ferramentas, listas, campos, botões flutuantes, abas, janelas de alerta, calendário etc.), e a navegação de um aplicativo mobile: uma pilha de páginas, animada como no <em>[Android]</em>, da qual o botão Voltar retira a página do topo;</li>
+<li><em>[Capacitor]</em>: o aplicativo <em>[Android]</em> e o acesso ao celular.</li>
+</ul>
+<p>Ao contrário do <em>[Flutter]</em>, não são necessários pacotes adicionais para a comunicação com um servidor: o <em>[Angular]</em> fornece o cliente HTTP, o roteador, os formulários e a injeção de dependência; o <em>[JavaScript]</em>, junto com o objeto <strong><em>[Intl]</em></strong>, fornece a formatação de datas e números para cada idioma; a biblioteca <em>[RxJS]</em>, incluída com o <em>[Angular]</em>, fornece fluxos assíncronos de dados. As traduções (Exemplo 21) ficam a cargo de uma pequena classe escrita especificamente para esse fim, que lê os dicionários JSON.</p>
+<h2 id="12-ferramentas-utilizadas">1.2. <span style="color: #2e74b5">Ferramentas utilizadas</span></h2>
+<p>Os exemplos foram escritos e testados com as seguintes ferramentas (sua instalação é descrita no próximo capítulo e no apêndice):</p>
+<ul>
+<li><em>[Node.js]</em> 24 e seu gerenciador de pacotes <em>[npm]</em>: o <em>[Angular CLI]</em> 22 exige o <em>[Node.js]</em> 22.22.3 (ou uma versão 22 mais recente), 24.15 ou superior, ou 26 e posteriores. O <em>[Node.js]</em> também executa o servidor JSON;</li>
+<li><em>[Angular CLI]</em> 22.2 (o comando <em>[ng]</em>), o <em>[Angular]</em> 22.2 e o <em>[TypeScript]</em> 6.0;</li>
+<li><em>[Ionic]</em> 9.0 (o pacote <em>[@ionic/angular]</em> 9.0.6) e seus ícones, <em>[ionicons]</em> 8.1;</li>
+<li><em>[Capacitor]</em> 8.5 (os pacotes <em>[@capacitor/core]</em>, <em>[@capacitor/android]</em> e <em>[@capacitor/cli]</em>) e seu plugin <em>[@capacitor/preferences]</em> 8.0;</li>
+<li>o editor <em>[Visual Studio Code]</em> e suas extensões <em>[Angular Language Service]</em> e <em>[Ionic]</em>;</li>
+<li><em>[Android Studio]</em>, para o SDK <em>[Android]</em>, seu JDK e seu gerenciador de emuladores: um emulador <em>[Android]</em> (um celular simulado no computador) ou um celular <em>[Android]</em> real conectado ao computador;</li>
+<li>o navegador <em>[Chrome]</em>, para desenvolver e depurar a aplicação, tanto no computador quanto no celular;</li>
+<li>o SGBD [MySQL] (ou <em>[MariaDB]</em>), por exemplo, o do <em>[Laragon]</em> no <em>[Windows]</em>: ele é necessário para o servidor JSON, como descrito no capítulo que o apresenta;</li>
+<li>a ferramenta de linha de comando <em>[curl]</em>, que exibe as respostas HTTP brutas.</li>
+</ul>
+<p>Os pacotes utilizados são os dos arquivos <em>[package.json]</em> dos dois projetos <em>[Ionic]</em>, que são idênticos: os <em>[@angular/...]</em> 22.2, <em>[@ionic/angular]</em> 9.0, <em>[ionicons]</em> 8.1, <em>[@capacitor/...]</em> 8.5, <em>[@capacitor/app]</em> 8.1, <em>[@capacitor/preferences]</em> 8.0, <em>[rxjs]</em> 7.8 e, somente para desenvolvimento, <em>[typescript]</em> 6.0, <em>[prettier]</em> 3 (formatação do código) e <em>[playwright]</em> 1.56 (capturas de tela).</p>
+<h2 id="13-capturas-de-tela">1.3. <span style="color: #2e74b5">Capturas de tela</span></h2>
+<p>As capturas de tela deste documento foram geradas automaticamente por programas que usam a biblioteca <em>[Playwright]</em> (pastas <em>[captures/]</em> dos dois projetos <em>[Ionic]</em>). O programa <em>[captures/captures.mjs]</em> controla um navegador <em>[Chromium]</em> (a versão livre do <em>[Chrome]</em>) no tamanho de um celular <em>[Android]</em>: 412 x 892 pontos, a 2,625 pixels por ponto, resultando em imagens de 1082 x 2342 pixels. Para cada exemplo, ele executa um “cenário” da pasta <em>[captures/scenarios/]</em>: abre a página do exemplo, interage com ela como um usuário faria (digitando texto, pressionando botões) e, em seguida, salva a tela como um arquivo de imagem.</p>
+<p>São, portanto, capturas reais da aplicação, renderizadas pelo motor do <em>[Chrome]</em>, o mesmo usado pela WebView do celular; faltam apenas a barra de status do celular (hora, bateria) e o teclado na tela. O leitor pode recriá-las (a aplicação deve estar em execução; veja abaixo):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>npx playwright install chromium
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>npm run captures
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>node captures/captures.mjs 05 17
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>linha 1: uma única vez: baixa o navegador <em>[Chromium]</em> usado pelo <em>[Playwright]</em>;</li>
+<li>linha 2: recria todas as capturas na pasta <em>[captures/images/]</em>;</li>
+<li>linha 3: recria apenas as dos exemplos 05 e 17.</li>
+</ul>
+<p>As capturas dos exemplos 22 a 25 e do estudo de caso também exigem que o servidor JSON esteja em execução em “modo de teste” para o CAPTCHA (veja o capítulo que descreve o servidor).</p>
+<h2 id="14-os-exemplos">1.4. <span style="color: #2e74b5">Os exemplos</span></h2>
+<p>O código deste documento está organizado em três pastas:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a>ionic-etape-par-etape-oct-2026/
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>├── examples_ionic/            the 25 small Ionic examples (a single project)
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>├── rdvmedecins-nestjs-json/   the RdvMedecins JSON server (the "black box")
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a>└── rdvmedecins_ionic/         the Ionic client of the case study
+</code></pre></div></td></tr></table></div>
+<p>Os exemplos formam um único projeto <em>[Ionic]</em>: uma página inicial, o menu de exemplos e uma página por exemplo, cada uma em sua própria pasta <em>[src/app/]</em> (o Exemplo 01 apresenta o projeto em detalhes):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span>
+<span class="normal"><a href="#__codelineno-2-16">16</a></span>
+<span class="normal"><a href="#__codelineno-2-17">17</a></span>
+<span class="normal"><a href="#__codelineno-2-18">18</a></span>
+<span class="normal"><a href="#__codelineno-2-19">19</a></span>
+<span class="normal"><a href="#__codelineno-2-20">20</a></span>
+<span class="normal"><a href="#__codelineno-2-21">21</a></span>
+<span class="normal"><a href="#__codelineno-2-22">22</a></span>
+<span class="normal"><a href="#__codelineno-2-23">23</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>examples_ionic/
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>├── angular.json               the Angular project configuration
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a>├── capacitor.config.ts        the Capacitor configuration
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>├── package.json               the packages and the scripts of the project
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a>├── proxy.conf.json            the relay to the JSON server (examples 22 to 25)
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>├── captures/                  the making of the screenshots
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>├── public/                    files delivered as is (icon, images, dictionaries)
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>└── src/
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>    ├── index.html             the page that hosts the application
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>    ├── main.ts                the entry point
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>    ├── styles.scss            the styles of the whole application
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>    └── app/
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a>        ├── app.ts             the root component
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a>        ├── app.routes.ts      the routes: one address per example
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a>        ├── examples.ts        the list of the 25 examples
+<a id="__codelineno-2-16" name="__codelineno-2-16"></a>        ├── home/              the menu of the examples
+<a id="__codelineno-2-17" name="__codelineno-2-17"></a>        ├── common/            the code shared by examples 22 to 25
+<a id="__codelineno-2-18" name="__codelineno-2-18"></a>        ├── ex01-first-application/
+<a id="__codelineno-2-19" name="__codelineno-2-19"></a>        │   ├── ex01.page.ts   the page of example 01 (its class)
+<a id="__codelineno-2-20" name="__codelineno-2-20"></a>        │   └── ex01.page.html (its template)
+<a id="__codelineno-2-21" name="__codelineno-2-21"></a>        ├── ex02-state/
+<a id="__codelineno-2-22" name="__codelineno-2-22"></a>        ├── ...
+<a id="__codelineno-2-23" name="__codelineno-2-23"></a>        └── ex25-server-errors/
+</code></pre></div></td></tr></table></div>
+<p>As pastas <em>[node_modules/]</em> (os pacotes) e <em>[android/]</em> (o projeto <em>[Android]</em>) não são fornecidas: a primeira é preenchida por <em>[npm install]</em> e a segunda é gerada pelo <em>[Capacitor]</em>. Em um console aberto na pasta <em>[examples_ionic]</em> (no <em>[VS Code]</em>: menu Terminal / Novo Terminal):</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>npm install
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a>npm start
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Linha 1: uma única vez, para todos os exemplos: baixa os pacotes descritos em <em>[package.json]</em> para a pasta <em>[node_modules/]</em>;</li>
+<li>linha 2: inicia o <em>[ng serve]</em>, o servidor de desenvolvimento do <em>[Angular]</em>, no endereço <em>[http://localhost:8100]</em>.</li>
+</ul>
+<p>Abra este endereço no <em>[Chrome]</em>: a página inicial lista os 25 exemplos, agrupados por capítulo; tocar em um exemplo o abre, e o botão Voltar de sua barra de ferramentas leva de volta ao menu. Também é possível ir diretamente a um exemplo pelo seu endereço: <em>[http://localhost:8100/ex05]</em> para o exemplo 05, por exemplo. Para ver a aplicação no tamanho de um celular, abra as ferramentas de desenvolvimento (F12) e, em seguida, a barra de emulação de dispositivos (Ctrl+Shift+M). Enquanto o <em>[ng serve]</em> estiver em execução, cada alteração de arquivo é compilada e aplicada imediatamente no navegador; Ctrl+C o interrompe.</p>
+<p>No <em>[Android]</em>, a aplicação de exemplo é instalada de uma só vez, com seus 25 exemplos e o menu:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>npx cap add android
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a>npx ng build
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a>npx cap sync android
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a>npx cap run android
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Linha 1: executar uma única vez: cria a pasta <em>[android/]</em> e um projeto <em>[Android Studio]</em> completo;</li>
+<li>Linha 2: compila a aplicação web na pasta <em>[dist/examples_ionic/browser/]</em>;</li>
+<li>Linha 3: copia-a para o projeto <em>[Android]</em>;</li>
+<li>linha 4: compila a aplicação <em>[Android]</em>, instala-a em um emulador em execução ou em um celular conectado (o comando pergunta qual, se houver vários) e a inicia.</li>
+</ul>
+<p>As linhas 2 a 4 devem ser executadas novamente após cada alteração no código. O Exemplo 01 também mostra como ativar o recarregamento automático do <em>[ng serve]</em> no celular.</p>
+<p>Os exemplos 22 a 25 consultam os servidores JSON e <em>[RdvMedecins]</em>: é preciso tê-los instalados e em execução, como explicado no capítulo dedicado a eles. No navegador, o servidor de desenvolvimento lhes envia as requisições <em>[/api]</em> (arquivo <em>[proxy.conf.json]</em>); no emulador, eles se conectam ao servidor no endereço <em>[http://10.0.2.2:8080]</em> (veja o Exemplo 22).</p>
+<h2 id="15-conteudo-do-documento">1.5. <span style="color: #2e74b5">Conteúdo do documento</span></h2>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Capítulo</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Conteúdo</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Exemplos</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Primeiros passos com o Ionic</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">um projeto Ionic (Angular + Capacitor), componentes Ionic, estado (signal, computed, effect), templates (@if, @for), eventos, todos os tipos de campos, um reducer, validação, formulários reativos, formatação (Intl, pipes)</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">01 a 09</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Componentes</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Entradas (input), saídas (output, model), composição (projeção de conteúdo, ng-template), ciclo de vida, injeção de dependência (serviços, inject), diretivas e animações, caixa de diálogo de confirmação (AlertController)</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">10 a 16</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Roteamento</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">O roteador do Angular e o ion-router-outlet: rotas, parâmetros, shell com ion-tabs, carregamento tardio (lazy loading), página 404, guards</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">17 e 18</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Operações assíncronas e estado compartilhado</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Promise, Observable (RxJS), timers, antirrepique (debounce), respostas obsoletas, async pipe, toSignal, resource, um serviço baseado em signals, @capacitor/preferences, tema escuro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">19 e 20</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Internacionalização</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Um aplicativo em francês e inglês</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">21</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">O servidor RdvMedecins, uma caixa-preta</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Instalação do servidor JSON, sua API, exemplos com curl</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">-</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Interação com o servidor</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">HttpClient, o proxy de desenvolvimento, o endereço do servidor, CapacitorHttp no Android, o cookie de token httpOnly (armazenado pelo navegador ou pelo Android), uma camada de acesso à API, erros do servidor</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">22 a 25</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Estudo de caso</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">o cliente Ionic da aplicação RdvMedecins</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">-</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Implantação</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">O cliente web compilado, servido pelo servidor JSON; a aplicação Android</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">-</div></td></tr></table>
+
+<p>Cada exemplo é apresentado com seu código completo, comentado linha a linha, e capturas de tela de sua execução. O próprio código é amplamente comentado: esses comentários fazem parte do curso.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://stahe.github.io" target="_blank">
+          https://stahe.github.io
+        </a>
+        <br>
+        Este tutorial, escrito pela IA <strong>Claude</strong>, da Anthropic, a pedido de <strong>Serge Tahé</strong>, é disponibilizado ao público sob os termos da licença
+        <em>Creative Commons Atribuição – Uso Não Comercial –
+        Compartilha Igual 3.0 Não Adaptada</em>.
+
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
